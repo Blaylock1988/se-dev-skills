@@ -1,6 +1,6 @@
 ---
 name: se-dev-blockrestrictions
-description: Use this skill when configuring the Space Engineers Block Restrictions mod (2053202808): restricting blocks, default-settings ECs, the world cfg and log, or debugging why a restriction didn't apply.
+description: Use this skill when configuring the Space Engineers Block Restrictions mod (2053202808), restricting blocks, default-settings ECs, the world cfg and log, or debugging why a restriction didn't apply.
 ---
 
 # Block Restrictions (Space Engineers mod 2053202808)
