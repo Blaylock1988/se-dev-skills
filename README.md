@@ -14,6 +14,7 @@ Each skill is general-purpose: no project-specific content, nothing tied to any 
 | :--- | :--- |
 | [`se-dev-blockrestrictions`](se-dev-blockrestrictions/) | The Space Engineers [Block Restrictions](https://steamcommunity.com/sharedfiles/filedetails/?id=2053202808) mod: restricting blocks, default-settings ECs, the world cfg and log, debugging why a restriction didn't apply. |
 | [`se-dev-shipcore`](se-dev-shipcore/) | The Space Engineers [Ship Core Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3552595651) mod: core XMLs, manifest, block groups, no-core profile, block limits, world config, load failures. |
+| [`se-dev-mes-contributing`](se-dev-mes-contributing/) | Contributing to [Modular Encounters Systems](https://github.com/MeridiusIX/Modular-Encounters-Systems): issue first, what the maintainer accepts, MES code and chat-command conventions, WebWiki entry style, PR text, answering review. Includes a review log updated after every PR. |
 | [`se-dev-reputation`](se-dev-reputation/) | Space Engineers faction reputation and NPC faction lifecycle: `StaticReputation`, vanilla damage/decay reputation, economy thresholds, MES reputation actions, why unwanted factions (e.g. `SPRT`) appear and removing them from a save. |
 
 ## Installing
