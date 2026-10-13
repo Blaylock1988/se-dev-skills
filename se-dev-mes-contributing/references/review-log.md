@@ -18,6 +18,11 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
 - **Revision 2 (2026-10-13):** restructured as above, rebased, explanatory code comments and co-author trailers
   removed, retested (flag off: an NPC cargo ship unchanged; flag on: fighters smooth), description replaced, reply
   posted. A declined PR has no formal review, so there is no re-request button; the reply notifies the maintainer.
+- **enenra on revision 2 (2026-10-13):** the wiki entries were "pretty much indecipherable" (they explained the math:
+  override targets, angular velocity, formulas), and asked whether MaxRotationMagnitude and AngleAllowedForForwardThrust
+  already do the same as MaxRotationStep and MaxAngleFromVelocity. Lesson: wiki entries say what the tag does to the
+  grid in play, and a new tag that sounds like an existing one states the difference. Check every claim in a reply
+  against the source before posting; correcting a mistaken reply plainly is fine.
 
 ## MeridiusIX/Modular-Encounters-Systems#389 Reset static encounters (VillanorSE, 2026-10-12) - changes requested
 

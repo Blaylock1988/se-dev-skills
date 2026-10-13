@@ -92,6 +92,8 @@ Audience: encounter modders and server admins.
 - No programming or insider terms ("closing" a grid, "watchers", "re-arm", "ramp frames", "API"). Say what the player
   or modder sees.
 - Behavior and default in a few sentences; what the tag is for and not for; one example value if it helps.
+- If a new tag sounds like an existing one, say how it differs in its entry (e.g. MaxRotationStep vs MaxRotationMagnitude).
+  The maintainer will ask otherwise (MeridiusIX/Modular-Encounters-Systems#390).
 - When one entry covers several commands or values, tie every consequence to the one that causes it ("When an old grid
   is removed using chat command 1, ..."). A sentence with no subject after a report-only variant reads as if that
   variant does it too (MeridiusIX/Modular-Encounters-Systems#389 wiki wording).
