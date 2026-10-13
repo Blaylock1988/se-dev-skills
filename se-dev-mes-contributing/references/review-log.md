@@ -15,6 +15,9 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
   untouched.
 - **Lesson:** big core changes need isolation (master tag + own file), in-game proof with the flag off, and a second
   reviewer/tester. Size alone is a reason to decline.
+- **Revision 2 (2026-10-13):** restructured as above, rebased, explanatory code comments and co-author trailers
+  removed, retested (flag off: an NPC cargo ship unchanged; flag on: fighters smooth), description replaced, reply
+  posted. A declined PR has no formal review, so there is no re-request button; the reply notifies the maintainer.
 
 ## MeridiusIX/Modular-Encounters-Systems#389 Reset static encounters (VillanorSE, 2026-10-12) - changes requested
 
