@@ -1,6 +1,6 @@
 ---
 name: se-dev-shipcore
-description: Use this skill when authoring or debugging Space Engineers Ship Core Framework (3552595651) content, core XMLs, manifest, block groups, no-core profile, block limits, world config, or load failures.
+description: Use this skill when working with the Space Engineers Ship Core Framework (Workshop 3552595651), for example creating or balancing ship cores and their block limits, setting up or combining content packs, choosing the no-core profile, reading the world config or log, or working out why a grid is shut down, slowed, damaged or not counted the way you expect.
 ---
 
 # Ship Core Framework (Space Engineers mod 3552595651)

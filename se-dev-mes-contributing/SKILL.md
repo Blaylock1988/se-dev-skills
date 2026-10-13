@@ -1,6 +1,6 @@
 ---
 name: se-dev-mes-contributing
-description: Use this skill whenever you want to send something to Modular Encounters Systems (MES) itself rather than just use it in a mod: you found an MES bug or odd behavior and want to report it, want to suggest or add a feature or tag, are writing an issue, opening or updating a pull request, writing or fixing an MES wiki page, replying to the maintainer's review, or wondering whether a fix belongs upstream at all. Covers how to make the case for a change, what gets accepted, MES code and chat-command conventions, wiki style, and tone.
+description: Use this skill whenever you want to send something to Modular Encounters Systems (MES) itself rather than just use it in a mod. For example you found an MES bug or odd behavior and want to report it, want to suggest or add a feature or tag, are writing an issue, opening or updating a pull request, writing or fixing an MES wiki page, replying to the maintainer's review, or wondering whether a fix belongs upstream at all. Covers how to make the case for a change, what gets accepted, MES code and chat-command conventions, wiki style, and tone.
 ---
 
 # Contributing to Modular Encounters Systems

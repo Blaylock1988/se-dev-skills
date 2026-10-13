@@ -1,6 +1,6 @@
 ---
 name: se-dev-reputation
-description: Use this skill when working on Space Engineers faction reputation or NPC faction lifecycle - StaticReputation, reputation not changing, vanilla damage/decay reputation, ReputationSettings/economy thresholds, MES ChangeReputation actions, or unwanted factions (SPRT etc.) appearing in a world and removing them from a save.
+description: Use this skill when working on Space Engineers faction reputation or the NPC faction lifecycle, for example StaticReputation, reputation that won't change, vanilla damage and decay reputation, ReputationSettings and economy thresholds, MES ChangeReputation actions, or unwanted factions (SPRT and others) appearing in a world and removing them from a save.
 ---
 
 # Space Engineers Reputation & NPC Factions

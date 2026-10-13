@@ -1,6 +1,6 @@
 ---
 name: se-dev-blockrestrictions
-description: Use this skill when configuring the Space Engineers Block Restrictions mod (2053202808), restricting blocks, default-settings ECs, the world cfg and log, or debugging why a restriction didn't apply.
+description: Use this skill when working with the Space Engineers Block Restrictions mod (Workshop 2053202808), for example limiting or banning blocks for players or NPCs, setting per-player, per-grid or per-faction block counts, editing the world's Block Restrictions config or the default settings in a mod, reading its log, or working out why a block was removed, refunded or still allowed.
 ---
 
 # Block Restrictions (Space Engineers mod 2053202808)
