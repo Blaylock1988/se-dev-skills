@@ -31,6 +31,13 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
   - the task class belongs in its own file in `Tasks/`.
 - **Lesson:** no extras beyond the purpose; follow existing command verbs and `.Info`; plain words in all text; use
   MES helpers; one class per file in the right folder.
+- **Revision 2 (2026-10-13):** all points addressed; replied on every thread (including a closing "Done" on the ones
+  first answered with "I'll update"); re-requested review; replaced the description, which still described revision 1.
+- **Found while retesting:** following the suggestion literally mattered. Using `IsIdentityPlayer` for block owners
+  let an owner MES couldn't place count as "not a player" (a player's ownerless plane would have been removed);
+  `IsIdentityNPC`, as suggested, makes an unknown owner block the reset. Planet-direction placement over water also
+  turned out to differ between world start and a reset; filed separately as MeridiusIX/Modular-Encounters-Systems#395
+  (one bug per issue).
 
 ## MeridiusIX/Modular-Encounters-Systems#377 Default MaxWaterDepth to -1 (VillanorSE, 2026-09-27) - merged
 

@@ -140,6 +140,8 @@ Audience: encounter modders and server admins.
 
 - Reply to every line comment briefly: what changed, or why not. Agree when the point is right.
 - Push as new commits or a clean rewrite (`--force-with-lease`) and say which.
+- Close every thread you answered with "I'll update" once it's done, replace the PR description if it describes
+  an older version, and re-request review (the circular arrow next to the reviewer).
 - Retest in game after changes and update the testing line.
 - If the maintainer declines, ask what would make it acceptable before reworking.
 
