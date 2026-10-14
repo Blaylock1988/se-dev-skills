@@ -41,11 +41,13 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
   MES helpers; one class per file in the right folder.
 - **Revision 2 (2026-10-13):** all points addressed; replied on every thread (including a closing "Done" on the ones
   first answered with "I'll update"); re-requested review; replaced the description, which still described revision 1.
-- **Found while retesting:** following the suggestion literally mattered. Using `IsIdentityPlayer` for block owners
-  let an owner MES couldn't place count as "not a player" (a player's ownerless plane would have been removed);
-  `IsIdentityNPC`, as suggested, makes an unknown owner block the reset. Planet-direction placement over water also
-  turned out to differ between world start and a reset; filed separately as MeridiusIX/Modular-Encounters-Systems#395
-  (one bug per issue).
+- **Found while retesting:** placement over water differs between world start and a reset; filed separately as
+  MeridiusIX/Modular-Encounters-Systems#395 (one bug per issue).
+- **enenra on revision 2 (2026-10-13):** the owner check must use `IsIdentityPlayer`, not the negation of
+  `IsIdentityNPC` ("checking for player owned by negating NPC owned again. That is not correct"), and `IsBot` should
+  never be used ("not accurate"); use the negation of `IsIdentityPlayer`. Revision 2 had switched to `!IsIdentityNPC`
+  after a test plane looked like an NPC, but that plane was ownerless; `IsIdentityPlayer` was correct all along.
+  Lesson: rule out the test setup (ownership, who is where) before changing code that the reviewer asked for.
 
 ## MeridiusIX/Modular-Encounters-Systems#377 Default MaxWaterDepth to -1 (VillanorSE, 2026-09-27) - merged
 

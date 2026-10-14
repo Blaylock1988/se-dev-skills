@@ -71,7 +71,8 @@ MES prefers agreeing the approach in an issue before code arrives. Other repos (
   file uses it. Keep method order consistent with the file.
 - No new code comments, unless continuing a pattern the file already has (e.g. the `//TagName` line above each tag
   parse). Put the reasoning in the PR description.
-- Use MES's own helpers: `FactionHelper` for player/NPC identity ("not NPC" is not "player"; check names at HEAD);
+- Use MES's own helpers: `FactionHelper` for player/NPC identity. A player check is `IsIdentityPlayer`, never the
+  negation of `IsIdentityNPC` ("not NPC" is not "player"), and never `IsBot`; check names at HEAD;
   `TagParse.*Check` in the profile's `InitTags`.
 - Long-running work goes in its own class in `Tasks/`.
 - No per-update allocations in autopilot/behavior code.
