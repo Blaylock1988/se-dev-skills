@@ -3,6 +3,17 @@
 One entry per PR: what was submitted, what the maintainer said, and the lesson. Newest first. Fold lessons into
 `SKILL.md`.
 
+## MeridiusIX/Modular-Encounters-Systems#395 issue and #396 fix (VillanorSE, 2026-10-13) - issue agreed, PR open
+
+- **Issue:** short, Problem / Seen in game / Fix headings, permalinks at a full SHA, measured numbers (ports raised
+  0.8-9.2 m, two resets 1 m apart = waves), the fix tied to existing code (PathPlacements already ignores water),
+  ended with "Happy to open a PR for this".
+- **enenra:** "Yes, a PR would be welcome for this." within the day.
+- **PR #396:** one line, `Fixes #395`, tested in game before opening (re-created encounter lands at its world-start
+  height).
+- **Lesson:** the issue-first route works when the issue carries measured evidence and a fix that matches existing
+  code.
+
 ## MeridiusIX/Modular-Encounters-Systems#390 Add autopilot flight rules (VillanorSE, 2026-10-12) - declined, then restructured
 
 - **Submitted:** 6 autopilot tags (MaxAngleFromVelocity, RollIntoTurns, MaxBankAngle, ReturnToLevel,
