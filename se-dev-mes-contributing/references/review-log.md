@@ -3,6 +3,20 @@
 One entry per PR: what was submitted, what the maintainer said, and the lesson. Newest first. Fold lessons into
 `SKILL.md`.
 
+## GV-Server-Mods/se-dev-mes#10 Clarify when inline spawn condition tags apply (VillanorSE, 2026-10-15) - open
+
+- **Not an MES PR:** a fix to the shared se-dev-mes skill, which takes PRs directly (no issue first).
+- **Why:** the skill said condition tags written inline in a spawn group's Description "are honored". In my mod, 36
+  spawn groups had `[PlanetaryInstallationType:]` next to `[SpawnConditionsProfiles:]`, and every installation
+  spawned Small.
+- **Submitted:** one bullet in `references/spawning_and_conditions.md`. The Description is conditions profile 0, the
+  referenced profiles are appended after it rather than merged, and profile 0 without a spawn type never matches. So
+  inline condition tags are ignored next to `[SpawnConditionsProfiles:]`. The bullet also covers
+  `[UseFirstConditionsAsPersistent:]` and the `Small` default. Branch based on upstream `main`. Problem / What MES
+  does / Change / Testing headings. Testing says docs only, checked against the Workshop MES source, no in-game test.
+- **Lesson:** when a skill's wording causes a mod bug, fix the skill upstream as well as the mod, and cite the
+  source lines that prove the corrected wording.
+
 ## MeridiusIX/Modular-Encounters-Systems#395 issue and #396 fix (VillanorSE, 2026-10-13) - issue agreed, PR open
 
 - **Issue:** short, Problem / Seen in game / Fix headings, permalinks at a full SHA, measured numbers (ports raised
@@ -14,7 +28,7 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
 - **Lesson:** the issue-first route works when the issue carries measured evidence and a fix that matches existing
   code.
 
-## MeridiusIX/Modular-Encounters-Systems#390 Add autopilot flight rules (VillanorSE, 2026-10-12) - declined, then restructured
+## MeridiusIX/Modular-Encounters-Systems#390 Add autopilot flight rules (VillanorSE, 2026-10-12) - declined, restructured, merged 2026-10-15
 
 - **Submitted:** 6 autopilot tags (MaxAngleFromVelocity, RollIntoTurns, MaxBankAngle, ReturnToLevel,
   ReturnToLevelMinSpeed, MaxRotationStep), each default off, ~150 lines inside `RotationSystem.cs`.
@@ -41,6 +55,11 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
   RollIntoTurnsMultiplier and ReturnToLevelMultiplier (as RotationMultiplier; chosen over his Rate suggestion for
   consistency with existing tags) and ReturnToLevelSpeedCutOff (as StrafeSpeedCutOff), each reply citing the existing tag at a permalink. Lesson: a
   numeric tag's name says what the number is; reuse the suffixes MES already has (Multiplier, CutOff) and cite them.
+- **Merged (2026-10-15):** after the renames, enenra approved without further comments and merged the same day
+  (merge commit `fc5cb29`), as "Add optional aircraft flight model for gyro-steered planes ([UseAircraftFlightModel])".
+  Lesson: a large central change that was declined can still merge once it's isolated behind a master tag in its
+  own file, a second modder has tested it, and every review point is answered. A merge is not a Workshop release:
+  don't build on the tags until a release ships them.
 
 ## MeridiusIX/Modular-Encounters-Systems#389 Reset static encounters (VillanorSE, 2026-10-12) - changes requested
 
