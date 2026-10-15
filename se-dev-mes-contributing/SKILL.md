@@ -62,6 +62,8 @@ MES prefers agreeing the approach in an issue before code arrives. Other repos (
   file (a `partial class`); existing methods untouched; the PR lists exactly which existing lines change; in-game
   evidence with the flag off (ideally a dedicated server) and before/after with it on; a second modder tests it.
 - Don't duplicate an existing command or tag; search `ChatMessage.cs` and the wiki first.
+- Name a numeric tag by what the number is, with a suffix MES already uses (`RotationMultiplier`, `StrafeSpeedCutOff`);
+  a bare phrase like `RollIntoTurns` reads as true/false, and `MinSpeed` implies a `MaxSpeed` (MeridiusIX/Modular-Encounters-Systems#390).
 - A bug fix found while building a feature goes in its own commit or issue.
 
 ## 2. Code conventions

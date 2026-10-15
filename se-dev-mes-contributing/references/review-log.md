@@ -35,6 +35,13 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
   grid in play, and a new tag that sounds like an existing one states the difference. Check every claim in a reply
   against the source before posting; correcting a mistaken reply plainly is fine.
 
+- **enenra review (2026-10-15, changes requested):** three naming comments in `AutoPilotProfile.cs`: RollIntoTurns
+  and ReturnToLevel take numbers but read like true/false (suggested e.g. RollIntoTurnsRate); ReturnToLevelMinSpeed
+  implies a MaxSpeed that doesn't exist (suggested ReturnToLevelCutoff/CutoffSpeed). Answer: renamed to
+  RollIntoTurnsMultiplier and ReturnToLevelMultiplier (as RotationMultiplier; chosen over his Rate suggestion for
+  consistency with existing tags) and ReturnToLevelSpeedCutOff (as StrafeSpeedCutOff), each reply citing the existing tag at a permalink. Lesson: a
+  numeric tag's name says what the number is; reuse the suffixes MES already has (Multiplier, CutOff) and cite them.
+
 ## MeridiusIX/Modular-Encounters-Systems#389 Reset static encounters (VillanorSE, 2026-10-12) - changes requested
 
 - **Submitted:** ResetThisStaticEncounter fix + `/MES.Debug.RefreshStaticEncounters` (dry run, `.Go`, `.Go.<group>`)
