@@ -3,6 +3,15 @@
 One entry per PR: what was submitted, what the maintainer said, and the lesson. Newest first. Fold lessons into
 `SKILL.md`.
 
+## MeridiusIX/Modular-Encounters-Systems#397 Let MaxWaterCoverage apply to dry-land installations (VillanorSE, 2026-10-15) - issue posted
+
+- **Owner's edits to the draft before posting:** opened with who it affects in general instead of "my scenario mod";
+  added that it's minor and doing nothing is fine; cut a simulated "one in eight" figure; described the Small/Medium
+  pool setup concretely; added a plain "result of this fix" paragraph and a usage example (MaxWaterCoverage:0.6);
+  closed with "If you are open to it, I'm happy to open a small PR for this."; paragraphs not hard-wrapped.
+- **Lesson:** folded into SKILL.md section 0 (general framing first, honest stakes, no unverifiable numbers, result +
+  example after the fix, softer close, no hard wraps).
+
 ## GV-Server-Mods/se-dev-mes#10 Clarify when inline spawn condition tags apply (VillanorSE, 2026-10-15) - open
 
 - **Not an MES PR:** a fix to the shared se-dev-mes skill, which takes PRs directly (no issue first).

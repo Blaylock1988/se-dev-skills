@@ -27,6 +27,12 @@ MES prefers agreeing the approach in an issue before code arrives. Other repos (
 
 ### Writing the issue
 - Short: what is broken, where (file and line), what was seen, the fix.
+- Open with who it affects in general ("MES encounter mods that mix land and water spawns ..."), not with your own mod.
+  Your setup goes under "Seen in game" as the concrete example (MeridiusIX/Modular-Encounters-Systems#397).
+- Say honestly how much it matters, even when that's "minor; doing nothing isn't really a problem, but the fix is
+  small too". It reads as a fair report, not a demand.
+- Leave out numbers from your own analysis or simulation that the maintainer can't check ("one sea check in eight");
+  describe the mechanism and what you saw instead.
 - Simple headings when they help ("Problem", "Seen in game", "Fix"); short, clear wording under each. A one-paragraph
   bug doesn't need them.
 - Brief reasoning: a sentence or two on why the fix is right or safe ("other mods are unaffected because the old path
@@ -36,6 +42,8 @@ MES prefers agreeing the approach in an issue before code arrives. Other repos (
   so GitHub renders the snippet.
 - Realistic example values (an extreme number pulls attention to the number instead of the problem).
 - A concrete fix: say exactly what to change. A simpler fallback option is fine.
+- After the fix, a short plain "result" paragraph: what changes for people who don't use the tag (nothing) and for
+  those who do, plus one example of how you'd use it ("I would set my land installations to MaxWaterCoverage:0.6").
 - Tie the fix to code that already works, and link the working code next to the broken code. It shows the fix is
   consistent with MES and is easy to verify:
   - a sibling path already does it right ("the hover thrust path already uses the forward component of velocity; use
@@ -45,7 +53,8 @@ MES prefers agreeing the approach in an issue before code arrives. Other repos (
 - Say when it started if git history shows it ("added in 2.1.22").
 - For features: the need, one or two possible approaches, and which questions the maintainer should decide (naming,
   where the code lives, a master tag).
-- End with "Happy to open a PR for this." Then wait for the maintainer to agree.
+- End with "If you are open to it, I'm happy to open a small PR for this." Then wait for the maintainer to agree.
+- Don't hard-wrap paragraphs in text for GitHub: one line per paragraph (GitHub reflows it).
 
 ## 1. Scope: what gets accepted
 
