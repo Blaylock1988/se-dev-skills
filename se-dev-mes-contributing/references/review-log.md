@@ -3,6 +3,16 @@
 One entry per PR: what was submitted, what the maintainer said, and the lesson. Newest first. Fold lessons into
 `SKILL.md`.
 
+## MeridiusIX/Modular-Encounters-Systems#399 Random waypoint altitude respects water (VillanorSE, 2026-10-16) - open
+
+- **Issue:** #366 (2026-09-24). enenra first wanted a way to respect or ignore water, then said on Discord that just
+  respecting it is fine.
+- **Submitted:** GetRandomCoords uses the water-aware PlanetEntity.SurfaceCoordsAtPosition (old terrain lookup as
+  fallback), plus waypoint tag `[IgnoreWater]` (default false) passed into its existing ignoreWater parameter; wiki
+  entry in Waypoint.md. A deliberate default change, agreed with the maintainer, not opt-in. Build-only, no in-game test.
+- **Lesson:** when the maintainer agrees a default change, reuse an existing parameter for the opt-out so the tag
+  costs one line of logic.
+
 ## MeridiusIX/Modular-Encounters-Systems#397 Let MaxWaterCoverage apply to dry-land installations (VillanorSE, 2026-10-15) - issue posted
 
 - **Owner's edits to the draft before posting:** opened with who it affects in general instead of "my scenario mod";
