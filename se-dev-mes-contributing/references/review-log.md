@@ -10,6 +10,11 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
 - **Submitted:** GetRandomCoords uses the water-aware PlanetEntity.SurfaceCoordsAtPosition (old terrain lookup as
   fallback), plus waypoint tag `[IgnoreWater]` (default false) passed into its existing ignoreWater parameter; wiki
   entry in Waypoint.md. A deliberate default change, agreed with the maintainer, not opt-in. Build-only, no in-game test.
+- **Process slip:** "push and open it" was meant as local prep; the PR went up before the owner had reviewed the
+  body and wiki text. Owner then edited both on GitHub: dropped "as agreed on Discord" for a plain reason ("the
+  likely more common use case") and rewrote the wiki entry to lead with what the tag does.
+- **Lesson:** confirm explicitly before opening anything public on the MES repo, even after a "push and open"; the
+  owner reviews the final PR body and wiki wording first.
 - **Lesson:** when the maintainer agrees a default change, reuse an existing parameter for the opt-out so the tag
   costs one line of logic.
 
