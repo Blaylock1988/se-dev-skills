@@ -3,6 +3,16 @@
 One entry per PR: what was submitted, what the maintainer said, and the lesson. Newest first. Fold lessons into
 `SKILL.md`.
 
+## MeridiusIX/Modular-Encounters-Systems#400 MaxWaterCoverage for every spawn group (VillanorSE, 2026-10-16) - open
+
+- **Issue:** #397, enenra: "Yes, sounds good. Please submit a PR."
+- **Submitted:** the MaxWaterCoverage check moved out of the requiresWater block (still only when > 0, default -1),
+  plus a first wiki entry for MaxWaterCoverage. Owner reviewed, edited the wiki wording and opened the PR themself.
+- **Testing:** in game with a low test value (0.1) so a coastal spot inside a territory exceeds it; /MES.GESAP shows
+  the water ratio and the eligible list, so no waiting for spawns.
+- **Lesson:** to test a threshold tag where the natural trigger is hard to reach, set the threshold low enough that a
+  reachable spot crosses it, and read eligibility with /MES.GESAP.
+
 ## MeridiusIX/Modular-Encounters-Systems#399 Random waypoint altitude respects water (VillanorSE, 2026-10-16) - open
 
 - **Issue:** #366 (2026-09-24). enenra first wanted a way to respect or ignore water, then said on Discord that just
