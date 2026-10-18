@@ -73,6 +73,9 @@ MES prefers agreeing the approach in an issue before code arrives. Other repos (
 - Don't duplicate an existing command or tag; search `ChatMessage.cs` and the wiki first.
 - Name a numeric tag by what the number is, with a suffix MES already uses (`RotationMultiplier`, `StrafeSpeedCutOff`);
   a bare phrase like `RollIntoTurns` reads as true/false, and `MinSpeed` implies a `MaxSpeed` (MeridiusIX/Modular-Encounters-Systems#390).
+- Name a new tag for what the modder sees and which grid runs it, not after an internal field: `ClearParentEscort`
+  became `LeaveEscortSlot`, since "parent" didn't say whether it runs on the escort or the leader
+  (MeridiusIX/Modular-Encounters-Systems#408).
 - A bug fix found while building a feature goes in its own commit or issue.
 
 ## 2. Code conventions
@@ -101,6 +104,11 @@ MES prefers agreeing the approach in an issue before code arrives. Other repos (
 Audience: encounter modders and server admins.
 
 - Only document what the PR's code implements; the maintainer checks wiki lines against the code.
+- A new page or explainer needs its structure agreed with the maintainer first, and stays short and written by a
+  person: long generated prose is rejected outright, "90% less text" (MeridiusIX/Modular-Encounters-Systems#363).
+  Single tag cards in the existing format are fine.
+- Terms: a bare "Tag" means any MES parameter, so the TriggerTag/EventTag feature is the "Tagging" system and the
+  singular is always "Trigger Tag" or "Event Tag". Not "Tokens"; the maintainer suggested "Variables" (#363).
 - No programming or insider terms ("closing" a grid, "watchers", "re-arm", "ramp frames", "API"). Say what the player
   or modder sees.
 - Behavior and default in a few sentences; what the tag is for and not for; one example value if it helps.

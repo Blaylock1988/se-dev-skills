@@ -3,7 +3,25 @@
 One entry per PR: what was submitted, what the maintainer said, and the lesson. Newest first. Fold lessons into
 `SKILL.md`.
 
-## MeridiusIX/Modular-Encounters-Systems#400 MaxWaterCoverage for every spawn group (VillanorSE, 2026-10-16) - open
+## MeridiusIX/Modular-Encounters-Systems#408 Clean up invalid escort slots, ClearParentEscort action (Mike Dude, 2026-10-17) - merged 2026-10-18
+
+- **Review:** enenra asked for a rename: `ClearParentEscort` matched the internal field but didn't say whether it
+  runs on the escort or the leader, and "parent" means nothing to a modder. Renamed to `LeaveEscortSlot` (run on the
+  escort; the leader can fill the slot again), wiki says "leader". enenra also asked whether a null check on `Escort`
+  was needed; the answer linked where every behavior creates its Escort subsystem and noted the action returns early
+  with no leader, so no check was added.
+- **Lesson:** folded into SKILL.md section 1 (name a tag for what the modder sees and which grid runs it).
+- **Lesson:** answer a "does this need a safety check" question with the line that guarantees it, not just "no".
+
+## MeridiusIX/Modular-Encounters-Systems#363 Tags & Tokens wiki pages (Mike Dude, 2026-09-23) - open, start over
+
+- **Review:** enenra wants the pages but rejected the text: about 300 generated lines, "way too wordy while not being
+  clear enough"; asked for 90% less, human-written text, with the page structure agreed first. Terms: not "Tokens"
+  (suggested "Variables"); "Tag" means any MES parameter, so call the feature the "Tagging" system and always say
+  Trigger Tag / Event Tag in the singular.
+- **Lesson:** folded into SKILL.md section 4 (agree structure first, keep it short, Tagging terms).
+
+## MeridiusIX/Modular-Encounters-Systems#400 MaxWaterCoverage for every spawn group (VillanorSE, 2026-10-16) - merged 2026-10-17, released in MES 2.75.00
 
 - **Issue:** #397, enenra: "Yes, sounds good. Please submit a PR."
 - **Submitted:** the MaxWaterCoverage check moved out of the requiresWater block (still only when > 0, default -1),
@@ -13,7 +31,7 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
 - **Lesson:** to test a threshold tag where the natural trigger is hard to reach, set the threshold low enough that a
   reachable spot crosses it, and read eligibility with /MES.GESAP.
 
-## MeridiusIX/Modular-Encounters-Systems#399 Random waypoint altitude respects water (VillanorSE, 2026-10-16) - open
+## MeridiusIX/Modular-Encounters-Systems#399 Random waypoint altitude respects water (VillanorSE, 2026-10-16) - open, waiting on an in-game test
 
 - **Issue:** #366 (2026-09-24). enenra first wanted a way to respect or ignore water, then said on Discord that just
   respecting it is fine.
@@ -25,6 +43,9 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
   likely more common use case") and rewrote the wiki entry to lead with what the tag does.
 - **Lesson:** confirm explicitly before opening anything public on the MES repo, even after a "push and open"; the
   owner reviews the final PR body and wiki wording first.
+- **Review:** enenra: "wait with this one until you've tested it", and asked whether `[IgnoreWater]` should also
+  cover waypoint placement so the two match.
+- **Lesson:** a build-only PR waits; test in game before opening.
 - **Lesson:** when the maintainer agrees a default change, reuse an existing parameter for the opt-out so the tag
   costs one line of logic.
 
@@ -37,7 +58,7 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
 - **Lesson:** folded into SKILL.md section 0 (general framing first, honest stakes, no unverifiable numbers, result +
   example after the fix, softer close, no hard wraps).
 
-## GV-Server-Mods/se-dev-mes#10 Clarify when inline spawn condition tags apply (VillanorSE, 2026-10-15) - open
+## GV-Server-Mods/se-dev-mes#10 Clarify when inline spawn condition tags apply (VillanorSE, 2026-10-15) - merged 2026-10-18
 
 - **Not an MES PR:** a fix to the shared se-dev-mes skill, which takes PRs directly (no issue first).
 - **Why:** the skill said condition tags written inline in a spawn group's Description "are honored". In my mod, 36
@@ -51,7 +72,7 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
 - **Lesson:** when a skill's wording causes a mod bug, fix the skill upstream as well as the mod, and cite the
   source lines that prove the corrected wording.
 
-## MeridiusIX/Modular-Encounters-Systems#395 issue and #396 fix (VillanorSE, 2026-10-13) - issue agreed, PR open
+## MeridiusIX/Modular-Encounters-Systems#395 issue and #396 fix (VillanorSE, 2026-10-13) - merged 2026-10-14, released in 2.75.00
 
 - **Issue:** short, Problem / Seen in game / Fix headings, permalinks at a full SHA, measured numbers (ports raised
   0.8-9.2 m, two resets 1 m apart = waves), the fix tied to existing code (PathPlacements already ignores water),
@@ -95,7 +116,7 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
   own file, a second modder has tested it, and every review point is answered. A merge is not a Workshop release:
   don't build on the tags until a release ships them.
 
-## MeridiusIX/Modular-Encounters-Systems#389 Reset static encounters (VillanorSE, 2026-10-12) - changes requested
+## MeridiusIX/Modular-Encounters-Systems#389 Reset static encounters (VillanorSE, 2026-10-12) - merged 2026-10-14, released in 2.75.00
 
 - **Submitted:** ResetThisStaticEncounter fix + `/MES.Debug.RefreshStaticEncounters` (dry run, `.Go`, `.Go.<group>`)
   + a mod API to trigger it.

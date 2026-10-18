@@ -30,7 +30,7 @@ PREFIX = "MyObjectBuilder_"
 FIELD_ORDER = ["PlayerMaxCount", "GridMaxCount", "FactionMaxCount", "AllowedForNPC", "AllowedForPlayer",
                "AllowedForUnowned", "AllowedForNPCStaticOnly", "AllowedForPlayerStaticOnly",
                "AllowedForUnownedStaticOnly"]
-TYPE_RE = re.compile(r"^MyObjectBuilder_[A-Za-z0-9_]+/[^/\s<>\[\]]+$")
+TYPE_RE = re.compile(r"^MyObjectBuilder_[A-Za-z0-9_]+/[^/\r\n<>\[\]]+$")
 
 
 def norm_type(t):
