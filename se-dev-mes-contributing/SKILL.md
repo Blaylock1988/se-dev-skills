@@ -53,6 +53,9 @@ MES prefers agreeing the approach in an issue before code arrives. Other repos (
 - Say when it started if git history shows it ("added in 2.1.22").
 - For features: the need, one or two possible approaches, and which questions the maintainer should decide (naming,
   where the code lives, a master tag).
+- Keep a feature issue to a few short paragraphs: the need, the cause in one sentence, the ask. Explain an example
+  value in plain words where it appears ("one entry per prefab, so here the second prefab turns 90 degrees");
+  an 8-paragraph draft was cut as too wordy (MeridiusIX/Modular-Encounters-Systems#452).
 - End with "If you are open to it, I'm happy to open a small PR for this." Then wait for the maintainer to agree.
 - Don't hard-wrap paragraphs in text for GitHub: one line per paragraph (GitHub reflows it).
 
