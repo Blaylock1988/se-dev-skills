@@ -3,6 +3,16 @@
 One entry per PR: what was submitted, what the maintainer said, and the lesson. Newest first. Fold lessons into
 `SKILL.md`.
 
+## MeridiusIX/Modular-Encounters-Systems#452 RotateInstallations in degrees (VillanorSE, 2026-10-25) - issue, open
+
+- **Submitted:** feature issue: values are atan(value/45), so 90 needs a huge number and 180 is unreachable; asked
+  for an opt-in degrees tag, existing tag unchanged. Need: a vehicle factory with a truck parked sideways.
+- **Owner:** first draft (8 paragraphs: mechanism detail, code links, result, decisions list) was "too wordy"; the
+  posted version is 4 short paragraphs. The owner said the half sentence explaining the example ("one entry per
+  prefab, so here the second prefab turns 90 degrees") helped a lot.
+- **Lesson:** for a feature issue, keep the need, the cause in one sentence, and the ask; explain any example value
+  in plain words right where it appears.
+
 ## MeridiusIX/Modular-Encounters-Systems#451 RotateInstallationsMin/Max read the wrong entry (VillanorSE, 2026-10-25) - issue, open
 
 - **Submitted:** bug issue only (found reading code, not seen in game): the Min/Max branch in PrefabSpawner checks
