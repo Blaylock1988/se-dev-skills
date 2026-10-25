@@ -3,6 +3,14 @@
 One entry per PR: what was submitted, what the maintainer said, and the lesson. Newest first. Fold lessons into
 `SKILL.md`.
 
+## MeridiusIX/Modular-Encounters-Systems#451 RotateInstallationsMin/Max read the wrong entry (VillanorSE, 2026-10-25) - issue, open
+
+- **Submitted:** bug issue only (found reading code, not seen in game): the Min/Max branch in PrefabSpawner checks
+  PrefabIndexes[i] but reads the lists with the loop counter i, so Random/SelectedIndexes spawning modes get another
+  slot's range. Linked the working RotateInstallations branch next to it, said it's minor, offered a small PR.
+- **Owner:** posted as drafted. A companion feature draft (RotateInstallations in degrees) was held back as "too
+  wordy": cut it to the need, the mechanism in one line and the proposed tag.
+
 ## MeridiusIX/Modular-Encounters-Systems#408 Clean up invalid escort slots, ClearParentEscort action (Mike Dude, 2026-10-17) - merged 2026-10-18
 
 - **Review:** enenra asked for a rename: `ClearParentEscort` matched the internal field but didn't say whether it
