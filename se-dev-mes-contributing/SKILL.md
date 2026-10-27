@@ -156,8 +156,7 @@ Audience: encounter modders and server admins.
   recap. Lead with `Fixes #n` followed directly by `### Change` and `### Testing` (MeridiusIX/Modular-Encounters-Systems#460).
 - Under `### Change`: keep it high-level (the logical mechanism in a few sentences). Do not list out file-by-file line
   diffs or granular code edits — the maintainer can view the GitHub "Files changed" diff directly.
-- In-game testing: describe the concrete test setup, values tested, and observed results. For reputation tests, remember
-  SE factions with `StaticReputation=true` freeze rep changes; test against dynamic factions (MeridiusIX/Modular-Encounters-Systems#460).
+- In-game testing: describe the concrete test setup, values tested, and observed results.
 - Credit testers and whoever suggested the approach.
 - Before pushing: `git fetch upstream` and rebase onto current `master`. Work from a fork (`gh repo sync`), one branch
   per PR from the fork's `master`.

@@ -14,8 +14,6 @@ One entry per PR: what was submitted, what the maintainer said, and the lesson. 
 - **Lesson:** When an issue already contains an agreed root-cause analysis, keep the PR body ultra-lean: `Fixes #n`
   followed directly by `### Change` and `### Testing`, omitting redundant problem essays and avoiding file-by-file line
   bullet lists.
-- **Lesson:** Space Engineers factions with `StaticReputation=true` freeze reputation changes across all paths; test
-  reputation logic against a faction with `StaticReputation=false`.
 
 ## MeridiusIX/Modular-Encounters-Systems#459 Document missing Debug and Info chat commands in the wiki (Mike Dude, 2026-10-26) - merged 2026-10-26
 
